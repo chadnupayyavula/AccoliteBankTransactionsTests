@@ -1,0 +1,9 @@
+{
+  "allure": {
+       "directory": "..\\..\\..\\Allure-Results",
+    "brokenTestData": [
+      "System.Exception"
+
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+
+  "bindingCulture": {
+    "name": "en-us"
+  },
+  "language": {
+    "feature": "en-us"
+  },
+  "NRetrySettings": {
+    "maxRetries": 3,
+    "applyGlobally": true
+  },
+  "stepAssemblies": [
+    {
+      "assembly": "Allure.SpecFlowPlugin"
+    }
+  ]
+}
