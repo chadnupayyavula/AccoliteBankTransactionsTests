@@ -73,12 +73,6 @@ namespace AccoliteBankTransactionsTests.Tests
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
-        {
-#line 3
-#line hidden
-        }
-        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify User account creation")]
         [NUnit.Framework.TestCaseAttribute("Chandu", "1", null)]
@@ -90,7 +84,7 @@ namespace AccoliteBankTransactionsTests.Tests
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account creation", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 7
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -100,19 +94,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 8
+#line 6
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 7
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 8
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 11
+#line 9
  testRunner.And(string.Format("Verify user created with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -130,7 +121,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account creation with multiple accounts", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 18
+#line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -140,19 +131,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 19
+#line 17
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 20
+#line 18
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 21
+#line 19
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 22
+#line 20
  testRunner.And(string.Format("Verify user created with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -170,7 +158,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account creation With returned account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 33
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -180,19 +168,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 34
+#line 32
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 35
+#line 33
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 36
+#line 34
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 37
+#line 35
  testRunner.And("Verify user created with returned account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -210,7 +195,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify multiple user accounts creation With returned account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 46
+#line 44
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -220,19 +205,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 47
+#line 45
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 48
+#line 46
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 49
+#line 47
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 50
+#line 48
  testRunner.And("Verify user created with returned account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -250,7 +232,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Remove User account with Name", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 59
+#line 57
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -260,22 +242,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 60
+#line 58
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 61
+#line 59
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 62
+#line 60
  testRunner.And(string.Format("Remove user account with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 63
+#line 61
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 64
+#line 62
  testRunner.And(string.Format("Verify user removed with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -293,7 +272,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Remove multiple User accounts with Name", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 72
+#line 70
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -303,22 +282,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 73
+#line 71
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 74
+#line 72
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 75
+#line 73
  testRunner.And(string.Format("Remove user account with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 76
+#line 74
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 77
+#line 75
  testRunner.And(string.Format("Verify user removed with name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -335,7 +311,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Remove User account which does not exist with account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 88
+#line 86
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -345,16 +321,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 89
+#line 87
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 90
+#line 88
  testRunner.When(string.Format("Remove User Account {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 91
+#line 89
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -372,7 +345,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Remove User accounts With returned account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 100
+#line 98
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -382,22 +355,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 101
+#line 99
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 102
+#line 100
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 103
+#line 101
  testRunner.And("Remove user account with account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 104
+#line 102
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 105
+#line 103
  testRunner.And("Verify user removed with returned account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -415,7 +385,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Remove multiple user accounts  With returned account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 114
+#line 112
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -425,22 +395,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 115
+#line 113
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 116
+#line 114
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 117
+#line 115
  testRunner.And("Remove user account with account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 118
+#line 116
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 119
+#line 117
  testRunner.And("Verify user removed with returned account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -454,7 +421,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account with invalid user name", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 127
+#line 125
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -464,16 +431,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 128
+#line 126
  testRunner.Given("Customer TestUser opens 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 129
+#line 127
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 130
+#line 128
  testRunner.Then("Verify user not exist with name InvalidUser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -487,7 +451,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account with invalid account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 132
+#line 130
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -497,16 +461,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 133
+#line 131
  testRunner.Given("Customer TestUser opens 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 134
+#line 132
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 135
+#line 133
  testRunner.Then("Verify user not exist with account number 99", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -524,7 +485,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify User account creation with empty name", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 137
+#line 135
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -534,16 +495,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 138
+#line 136
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 139
+#line 137
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 140
+#line 138
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

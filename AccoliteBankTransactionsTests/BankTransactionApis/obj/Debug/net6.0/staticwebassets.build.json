@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RQ9iY++TiSydfx+yUTsNKYWhfCFuH6YzAIhPZnFNtGo=",
+  "Source": "BankTransactionApis",
+  "BasePath": "_content/BankTransactionApis",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

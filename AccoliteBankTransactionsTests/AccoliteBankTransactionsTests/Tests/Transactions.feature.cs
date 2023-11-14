@@ -73,12 +73,6 @@ namespace AccoliteBankTransactionsTests.Tests
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
-        {
-#line 3
-#line hidden
-        }
-        
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify Bank balance on account creation")]
         [NUnit.Framework.TestCaseAttribute("Chandu", "3", null)]
@@ -90,7 +84,7 @@ namespace AccoliteBankTransactionsTests.Tests
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Bank balance on account creation", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -100,19 +94,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 7
+#line 6
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 7
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 9
+#line 8
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 10
+#line 9
  testRunner.And("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -130,7 +121,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance on multiple accounts creation", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 20
+#line 19
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -140,19 +131,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 21
+#line 20
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 22
+#line 21
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 23
+#line 22
  testRunner.Then("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 24
+#line 23
  testRunner.And("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -172,7 +160,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance when withraw 10 to check account should have 100 all the time" +
                     "", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 31
+#line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -182,16 +170,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 32
+#line 31
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 33
+#line 32
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 34
+#line 33
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -200,13 +185,13 @@ this.FeatureBackground();
                 table1.AddRow(new string[] {
                             "withdraw",
                             "10"});
-#line 35
+#line 34
  testRunner.And("Make Transaction", ((string)(null)), table1, "And ");
 #line hidden
-#line 38
+#line 37
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 39
+#line 38
  testRunner.And("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -223,7 +208,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance when credit 10", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 48
+#line 47
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -233,10 +218,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 49
+#line 48
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -245,13 +227,13 @@ this.FeatureBackground();
                 table2.AddRow(new string[] {
                             "credit",
                             "10"});
-#line 50
+#line 49
  testRunner.When("Make Transaction On the given account", ((string)(null)), table2, "When ");
 #line hidden
-#line 53
+#line 52
  testRunner.Then("Verify account balance must be 110", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 54
+#line 53
  testRunner.And("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -268,7 +250,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify when user Credit 10001$", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 62
+#line 61
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -278,10 +260,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 63
+#line 62
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -290,13 +269,13 @@ this.FeatureBackground();
                 table3.AddRow(new string[] {
                             "credit",
                             "10001"});
-#line 64
+#line 63
  testRunner.When("Make Transaction On the given account", ((string)(null)), table3, "When ");
 #line hidden
-#line 67
+#line 66
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 68
+#line 67
  testRunner.And("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -314,7 +293,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance when try to withdraw more than 90%", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 77
+#line 76
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -324,13 +303,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 78
+#line 77
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 79
+#line 78
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -342,13 +318,13 @@ this.FeatureBackground();
                 table4.AddRow(new string[] {
                             "withdraw",
                             "1000"});
-#line 80
+#line 79
  testRunner.When("Make Transaction", ((string)(null)), table4, "When ");
 #line hidden
-#line 84
+#line 83
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 85
+#line 84
  testRunner.And("Verify account balance must be 1100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -366,7 +342,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify withdraw amount which is equal to 90% of account balance", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 92
+#line 91
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -376,13 +352,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 93
+#line 92
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 94
+#line 93
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -394,13 +367,13 @@ this.FeatureBackground();
                 table5.AddRow(new string[] {
                             "withdraw",
                             "990"});
-#line 95
+#line 94
  testRunner.When("Make Transaction", ((string)(null)), table5, "When ");
 #line hidden
-#line 99
+#line 98
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 100
+#line 99
  testRunner.And("Verify account balance must be 110", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -418,7 +391,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance after multiple credits", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 110
+#line 109
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -428,13 +401,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 111
+#line 110
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 112
+#line 111
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -449,13 +419,13 @@ this.FeatureBackground();
                 table6.AddRow(new string[] {
                             "credit",
                             "1000"});
-#line 113
+#line 112
  testRunner.When("Make Transaction", ((string)(null)), table6, "When ");
 #line hidden
-#line 118
+#line 117
  testRunner.Then("Verify Response Status Code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 119
+#line 118
  testRunner.And("Verify account balance must be 3100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -473,7 +443,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify bank balance after multiple credits and withdrawls", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 128
+#line 127
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -483,13 +453,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 129
+#line 128
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 130
+#line 129
  testRunner.When("Create User Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
@@ -513,10 +480,10 @@ this.FeatureBackground();
                 table7.AddRow(new string[] {
                             "withdraw",
                             "500"});
-#line 131
+#line 130
  testRunner.When("Make Transaction", ((string)(null)), table7, "When ");
 #line hidden
-#line 139
+#line 138
  testRunner.Then("Verify account balance must be 1600", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -533,7 +500,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Bank balance with Invalid account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 146
+#line 145
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -543,16 +510,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 147
+#line 146
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 148
+#line 147
  testRunner.When(string.Format("Get account statement for account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 149
+#line 148
  testRunner.Then("Statement should be empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -569,7 +533,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify credit on Invalid account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 158
+#line 157
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -579,16 +543,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 159
+#line 158
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 160
+#line 159
  testRunner.When(string.Format("Try credit 100 on account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 161
+#line 160
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -605,7 +566,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify withdrawl on Invalid account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 170
+#line 169
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -615,16 +576,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 171
+#line 170
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 172
+#line 171
  testRunner.When(string.Format("Try withdrawal 100 on account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 173
+#line 172
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -642,7 +600,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("name", name);
             argumentsOfScenario.Add("numberOfAccounts", numberOfAccounts);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Bank balance with removed account number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 182
+#line 181
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -652,19 +610,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 183
+#line 182
  testRunner.Given(string.Format("Customer {0} opens {1}", name, numberOfAccounts), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 184
+#line 183
  testRunner.When("Remove user account with account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 185
+#line 184
  testRunner.And("Get statement for account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 186
+#line 185
  testRunner.Then("Statement should be empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -681,7 +636,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Credit with negative number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 194
+#line 193
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -691,10 +646,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 195
+#line 194
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
@@ -703,13 +655,13 @@ this.FeatureBackground();
                 table8.AddRow(new string[] {
                             "credit",
                             "-1000"});
-#line 196
+#line 195
  testRunner.When("Make Transaction On the given account", ((string)(null)), table8, "When ");
 #line hidden
-#line 199
+#line 198
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 200
+#line 199
  testRunner.And("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -726,7 +678,7 @@ this.FeatureBackground();
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("accountNumber", accountNumber);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify withdrawal with negative number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 209
+#line 208
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -736,10 +688,7 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 210
+#line 209
  testRunner.Given(string.Format("Customer Account number {0}", accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
@@ -748,13 +697,13 @@ this.FeatureBackground();
                 table9.AddRow(new string[] {
                             "withdraw",
                             "-1000"});
-#line 211
+#line 210
  testRunner.When("Make Transaction On the given account", ((string)(null)), table9, "When ");
 #line hidden
-#line 214
+#line 213
  testRunner.Then("Verify Response Status Code is 500", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 215
+#line 214
  testRunner.And("Verify account balance must be 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
