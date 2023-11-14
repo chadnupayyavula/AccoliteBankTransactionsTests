@@ -5,8 +5,12 @@ To do this assignment I have created my own web api it queries form the sql data
 
  please find api swagger url https://accolitebanktransactions.azurewebsites.net/swagger/index.html
 
-SQL Database diagram  
 ![image](https://github.com/chadnupayyavula/AccoliteBankTransactionsTests/assets/30076068/29123cbb-6a3f-4472-aeae-a60c1f506cc4)
+
+SQL Database diagram  
+
+![image](https://github.com/chadnupayyavula/AccoliteBankTransactionsTests/assets/30076068/dc2a4761-6e6d-41c2-b070-c8ee4a1eb7b8)
+
 
 • Account number in users table is primary key and applied identity on it. • two tables have relationship on account number column You can find the web api swagger htps://accolitebanktransactions.azurewebsites.net/swagger/index.html
 
